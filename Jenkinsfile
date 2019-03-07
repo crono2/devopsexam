@@ -23,6 +23,6 @@ sh "docker push crono2/devopsexam:express1"
 stage('Apply changes to the environment') {
 sh "ls -l"
 }
-
-
+stage('EXPOSE') {
+sh "docker run -p 5961/tcp"
 }
